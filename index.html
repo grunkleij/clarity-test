@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Clarity & GA Practice Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV77WF977W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-QV77WF977W');
-  </script>
-
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5D5WK6FM');</script>
+  <!-- End Google Tag Manager -->
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
@@ -31,31 +34,37 @@
       margin: 0;
       line-height: 1.6;
     }
+
     header {
       background: #1f2937;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
+
     section {
       padding: 40px 20px;
       border-bottom: 1px solid #ddd;
     }
+
     button {
       padding: 12px 20px;
       font-size: 16px;
       cursor: pointer;
       margin-top: 10px;
     }
+
     .primary {
       background: #2563eb;
       color: #fff;
       border: none;
     }
+
     .secondary {
       background: #e5e7eb;
       border: 1px solid #aaa;
     }
+
     footer {
       background: #f3f4f6;
       padding: 30px;
@@ -66,68 +75,68 @@
 
 <body>
 
-<header>
-  <h1>Analytics Practice Website</h1>
-  <p>Testing Google Analytics & Microsoft Clarity</p>
-</header>
+  <header>
+    <h1>Analytics Practice Website</h1>
+    <p>Testing Google Analytics & Microsoft Clarity</p>
+  </header>
 
-<section>
-  <h2>Welcome</h2>
-  <p>
-    This page is built to practice user behavior analysis.
-    Scroll, click buttons, and explore interactions.
-  </p>
+  <section>
+    <h2>Welcome</h2>
+    <p>
+      This page is built to practice user behavior analysis.
+      Scroll, click buttons, and explore interactions.
+    </p>
 
-  <button class="primary"
-    onclick="gtag('event','cta_click',{event_label:'top_cta'});">
-    Get Started
-  </button>
-</section>
+    <button class="primary" onclick="gtag('event','cta_click',{event_label:'top_cta'});">
+      Get Started
+    </button>
+  </section>
 
-<section>
-  <h2>Why Analytics?</h2>
-  <p>
-    Analytics helps teams understand user behavior,
-    identify problems, and improve UX decisions.
-  </p>
+  <section>
+    <h2>Why Analytics?</h2>
+    <p>
+      Analytics helps teams understand user behavior,
+      identify problems, and improve UX decisions.
+    </p>
 
-  <button class="secondary">
-    Learn More
-  </button>
-</section>
+    <button class="secondary">
+      Learn More
+    </button>
+  </section>
 
-<section>
-  <h2>Scroll Test Section</h2>
-  <p>
-    This long section is intentional. It helps test:
-    scroll depth, attention drop-off, and heatmaps.
-  </p>
+  <section>
+    <h2>Scroll Test Section</h2>
+    <p>
+      This long section is intentional. It helps test:
+      scroll depth, attention drop-off, and heatmaps.
+    </p>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate.</p>
-  <p>Excepteur sint occaecat cupidatat non proident.</p>
-  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Scroll a bit more…</p>
-  <p>And a bit more…</p>
-</section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate.</p>
+    <p>Excepteur sint occaecat cupidatat non proident.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Scroll a bit more…</p>
+    <p>And a bit more…</p>
+  </section>
 
-<section>
-  <h2>Feedback</h2>
-  <p>
-    Clicking repeatedly can create rage-click patterns
-    in Microsoft Clarity.
-  </p>
+  <section>
+    <h2>Feedback</h2>
+    <p>
+      Clicking repeatedly can create rage-click patterns
+      in Microsoft Clarity.
+    </p>
 
-  <button onclick="alert('Thanks for clicking!')">
-    Give Feedback
-  </button>
-</section>
+    <button onclick="alert('Thanks for clicking!')">
+      Give Feedback
+    </button>
+  </section>
 
-<footer>
-  <p>End of Page — Heatmap Bottom Area</p>
-</footer>
+  <footer>
+    <p>End of Page — Heatmap Bottom Area</p>
+  </footer>
 
 </body>
+
 </html>
