@@ -77,6 +77,7 @@
 
   <header>
     <h1>Analytics Practice Website</h1>
+
     <p>Testing Google Analytics & Microsoft Clarity</p>
   </header>
 
@@ -87,7 +88,10 @@
       Scroll, click buttons, and explore interactions.
     </p>
 
-    <button class="primary" onclick="gtag('event','cta_click',{event_label:'top_cta'});">
+    <button class="primary" onclick="dataLayer.push({
+    event: 'cta_click',
+    button_name: 'top_cta'
+  });">
       Get Started
     </button>
   </section>
