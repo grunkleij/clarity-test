@@ -145,6 +145,33 @@
     </button>
   </section>
 
+
+  <section>
+  <h2>Newsletter</h2>
+  <p>
+    Subscribe to our newsletter to receive analytics tips and updates.
+  </p>
+
+  <form onsubmit="
+    alert('Thanks for subscribing!');
+    return false;
+  " 
+  id="newsletter_form_id"
+  >
+    <input
+      type="email"
+      required
+      placeholder="Enter your email"
+      style="padding:10px; width:250px; margin-right:10px;"
+    />
+
+    <button type="submit" class="primary">
+      Subscribe
+    </button>
+  </form>
+</section>
+
+
   <footer>
     <p>End of Page — Heatmap Bottom Area</p>
   </footer>
